@@ -1,0 +1,124 @@
+/* Google Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300..600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* NỀN CHÍNH: Màu Xanh dương (#1E56A0) */
+    --background: 214 68.3% 37.3%;
+    --foreground: 0 0% 96.5%;
+
+    /* CARD & POPOVER */
+    --card: 214 68.3% 37.3%;
+    --card-foreground: 0 0% 96.5%;
+    --popover: 214 68.3% 37.3%;
+    --popover-foreground: 0 0% 96.5%;
+
+    /* PRIMARY (Chủ đạo cũ là Đen -> Đổi thành Xanh dương #1E56A0) */
+    --primary: 214 68.3% 37.3%;
+    --primary-foreground: 0 0% 96.5%;
+
+    /* SECONDARY (Màu nhấn cũ là Lime Neon -> Đổi thành Trắng nhạt #F6F6F6) */
+    --secondary: 0 0% 96.5%;
+    --secondary-foreground: 214 68.3% 37.3%;
+
+    /* MUTED (Màu phụ cũ là Kem/Beige -> Đổi thành Kem ấm #EDE4D3) */
+    --muted: 39 41.8% 87.8%;
+    --muted-foreground: 214 68.3% 37.3%;
+
+    /* ACCENT (Màu cân bằng cũ là Trắng/Xám -> Đổi thành Xám-xanh #D7E0E8) */
+    --accent: 208 27.1% 87.6%;
+    --accent-foreground: 214 68.3% 37.3%;
+
+    /* DESTRUCTIVE */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* BORDERS & INPUTS */
+    --border: 39 41.8% 87.8%; /* Dùng màu Kem ấm làm viền như trong ảnh của bạn */
+    --input: 39 41.8% 87.8%;
+    --ring: 0 0% 96.5%;
+
+    --radius: 0.5rem;
+
+    /* SIDEBAR */
+    --sidebar-background: 214 68.3% 37.3%;
+    --sidebar-foreground: 0 0% 96.5%;
+    --sidebar-primary: 0 0% 96.5%;
+    --sidebar-primary-foreground: 214 68.3% 37.3%;
+    --sidebar-accent: 208 27.1% 87.6%;
+    --sidebar-accent-foreground: 214 68.3% 37.3%;
+    --sidebar-border: 39 41.8% 87.8%;
+    --sidebar-ring: 0 0% 96.5%;
+
+    /* Figma tokens */
+    --figma-surface: 208 27.1% 87.6%;
+    --figma-highlight: 39 41.8% 87.8%;
+    --figma-subtle: 0 0% 96.5%;
+    --figma-color-9: 0 0% 95%;
+    --figma-color-10: 214 68.3% 37.3%;
+    --figma-color-11: 214 68.3% 37.3%;
+    --figma-text-1: 0 0% 96.5%;
+  }
+
+  /* DARK MODE (Tạm thời giữ nguyên bản tối gốc của bạn) */
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', sans-serif;
+  }
+
+  img, video, svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
