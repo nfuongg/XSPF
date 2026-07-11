@@ -10,65 +10,75 @@
 
 @layer base {
   :root {
-    /* NỀN CHÍNH: Màu Xanh dương (#1E56A0) */
-    --background: 214 68.3% 37.3%;
-    --foreground: 0 0% 96.5%;
+    /*
+      BỘ MÀU CẬP NHẬT – Client 3
+      Xanh đậm:  #1E56A0 → hsl(214, 68%, 37%)   [giữ nguyên]
+      Trắng:     #FFFFFF → hsl(0, 0%, 100%)     [giữ nguyên]
+      Màu 3 (muted):   #E5EEF5 → hsl(210, 33%, 93%)
+      Màu 4 (border):  #A8BDD0 → hsl(210, 28%, 74%)
+    */
 
-    /* CARD & POPOVER */
-    --card: 214 68.3% 37.3%;
-    --card-foreground: 0 0% 96.5%;
-    --popover: 214 68.3% 37.3%;
-    --popover-foreground: 0 0% 96.5%;
+    /* Nền tối (chính) */
+    --background: 214 68.3% 37.3%;     /* #1E56A0 */
+    --foreground: 0 0% 100%;           /* #FFFFFF */
 
-    /* PRIMARY (Chủ đạo cũ là Đen -> Đổi thành Xanh dương #1E56A0) */
+    /* Card & Popover – nền trắng, chữ xanh đậm */
+    --card: 0 0% 100%;                 /* #FFFFFF */
+    --card-foreground: 214 68.3% 37.3%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 68.3% 37.3%;
+
+    /* Primary – xanh đậm */
     --primary: 214 68.3% 37.3%;
-    --primary-foreground: 0 0% 96.5%;
+    --primary-foreground: 0 0% 100%;
 
-    /* SECONDARY (Màu nhấn cũ là Lime Neon -> Đổi thành Trắng nhạt #F6F6F6) */
-    --secondary: 0 0% 96.5%;
+    /* Secondary – trắng */
+    --secondary: 0 0% 100%;
     --secondary-foreground: 214 68.3% 37.3%;
 
-    /* MUTED (Màu phụ cũ là Kem/Beige -> Đổi thành Kem ấm #EDE4D3) */
-    --muted: 39 41.8% 87.8%;
+    /* MUTED – ĐÃ ĐỔI THÀNH MÀU 3 MỚI */
+    --muted: 210 33.3% 93.1%;           /* #E5EEF5 */
     --muted-foreground: 214 68.3% 37.3%;
 
-    /* ACCENT (Màu cân bằng cũ là Trắng/Xám -> Đổi thành Xám-xanh #D7E0E8) */
-    --accent: 208 27.1% 87.6%;
+    /* ACCENT – đồng bộ với muted */
+    --accent: 210 33.3% 93.1%;
     --accent-foreground: 214 68.3% 37.3%;
+    --accent-light: 190 80% 60%; 
 
-    /* DESTRUCTIVE */
+    /* Destructive – giữ nguyên */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    /* BORDERS & INPUTS */
-    --border: 39 41.8% 87.8%; /* Dùng màu Kem ấm làm viền như trong ảnh của bạn */
-    --input: 39 41.8% 87.8%;
-    --ring: 0 0% 96.5%;
+    /* BORDER – ĐÃ ĐỔI THÀNH MÀU 4 MỚI */
+    --border: 210 28.4% 73.7%;          /* #A8BDD0 */
+    --input: 210 33.3% 93.1%;
+    --ring: 0 0% 100%;
 
     --radius: 0.5rem;
 
-    /* SIDEBAR */
+    /* Sidebar – đồng bộ */
     --sidebar-background: 214 68.3% 37.3%;
-    --sidebar-foreground: 0 0% 96.5%;
-    --sidebar-primary: 0 0% 96.5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
     --sidebar-primary-foreground: 214 68.3% 37.3%;
-    --sidebar-accent: 208 27.1% 87.6%;
+    --sidebar-accent: 210 33.3% 93.1%;
     --sidebar-accent-foreground: 214 68.3% 37.3%;
-    --sidebar-border: 39 41.8% 87.8%;
-    --sidebar-ring: 0 0% 96.5%;
+    --sidebar-border: 210 28.4% 73.7%;
+    --sidebar-ring: 0 0% 100%;
 
-    /* Figma tokens */
-    --figma-surface: 208 27.1% 87.6%;
-    --figma-highlight: 39 41.8% 87.8%;
-    --figma-subtle: 0 0% 96.5%;
+    /* Figma tokens – đồng bộ */
+    --figma-surface: 210 33.3% 93.1%;
+    --figma-highlight: 0 0% 100%;
+    --figma-subtle: 214 68.3% 37.3%;
     --figma-color-9: 0 0% 95%;
     --figma-color-10: 214 68.3% 37.3%;
     --figma-color-11: 214 68.3% 37.3%;
-    --figma-text-1: 0 0% 96.5%;
+    --figma-text-1: 0 0% 100%;
   }
 
-  /* DARK MODE (Tạm thời giữ nguyên bản tối gốc của bạn) */
   .dark {
+    /* Giữ nguyên dark mode */
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -96,6 +106,37 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* ===== QUY TẮC TỰ ĐỘNG ĐỔI MÀU CHỮ TRÊN NỀN SÁNG ===== */
+@layer components {
+  .bg-accent,
+  .bg-muted,
+  .bg-card,
+  .bg-popover {
+    color: hsl(var(--accent-foreground));
+  }
+
+  .bg-accent *,
+  .bg-muted *,
+  .bg-card *,
+  .bg-popover * {
+    color: inherit;
+  }
+
+  .bg-accent .text-secondary,
+  .bg-muted .text-secondary,
+  .bg-card .text-secondary,
+  .bg-popover .text-secondary {
+    color: hsl(var(--secondary));
+  }
+
+  .bg-accent .text-primary,
+  .bg-muted .text-primary,
+  .bg-card .text-primary,
+  .bg-popover .text-primary {
+    color: hsl(var(--primary));
   }
 }
 

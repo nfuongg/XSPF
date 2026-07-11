@@ -11,13 +11,13 @@ const assetPath = (fileName) =>
   `${import.meta.env.BASE_URL}${fileName.replace(/^\//, "")}`;
 
 const images = {
-  hero: assetPath("xs4.jpg"),
+  hero: assetPath("hmai3.jpg"),
   aboutFeature: assetPath("xs2.png"),
   aboutPortrait: assetPath("xs2.png"),
-  setupMain: assetPath("Group-19142@2x.png"),
-  setupLaptop: assetPath("Rectangle-29441@2x.png"),
-  setupCreative: assetPath("Rectangle-26603@2x.png"),
-  setupWorkspace: assetPath("Rectangle-2944@2x.png"),
+  setupMain: assetPath("xs11.png"),
+  setupLaptop: assetPath("xs10.png"),
+  setupCreative: assetPath("xs12.png"),
+  setupWorkspace: assetPath("xs13.png"),
 };
 
 const skillIconByName = {
@@ -80,16 +80,16 @@ export default function Portfolio() {
   ];
 
   return (
-    <main className="max-w-[1920px] w-full mx-auto relative bg-background overflow-clip font-heading text-[#EDE4D3]">
+    <main className="max-w-[1920px] w-full mx-auto relative bg-background overflow-clip font-heading text-[#F0F5FA]">
       {/* Background Grid Lines */}
       <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.03] flex justify-between w-full h-full">
         {[...Array(10)].map((_, i) => (
-          <div key={i} className="w-1 h-full bg-[#EDE4D3]" />
+          <div key={i} className="w-1 h-full bg-[#F0F5FA]" />
         ))}
       </div>
 
       {/* Navigation */}
-      <nav className="sticky top-6 z-50 mx-4 md:mx-[clamp(16px,2vw,38px)] flex flex-row justify-between items-center p-[15px] rounded-[16px] shadow-[inset_0_0_0_1px_#EDE4D3] bg-background/80 backdrop-blur-md">
+      <nav className="sticky top-6 z-50 mx-4 md:mx-[clamp(16px,2vw,38px)] flex flex-row justify-between items-center p-[15px] rounded-[16px] shadow-[inset_0_0_0_1px_#F0F5FA] bg-background/80 backdrop-blur-md">
         <div className="flex flex-row items-center gap-[18px]">
           <p className="text-[clamp(20px,2.4vw,46px)] font-extrabold leading-none">
             PORTFOLIO
@@ -132,7 +132,7 @@ export default function Portfolio() {
         className="mt-[clamp(25px,5.2vw,100px)] mx-4 md:mx-10 relative rounded-[20px] overflow-clip aspect-[16/9] md:aspect-[1843/906] z-10"
       >
         <img
-          className="w-full h-full object-cover shadow-[inset_0_0_0_1px_#EDE4D3]"
+          className="w-full h-full object-cover shadow-[inset_0_0_0_1px_#F0F5FA]"
           src={images.hero}
           alt="Không gian công nghệ"
         />
@@ -143,7 +143,7 @@ export default function Portfolio() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-[clamp(14px,1.5vw,24px)] font-medium text-[#EDE4D3]/80 mb-2 tracking-widest uppercase"
+            className="text-[clamp(14px,1.5vw,24px)] font-medium text-[#F0F5FA]/80 mb-2 tracking-widest uppercase"
           >
             Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo
           </motion.p>
@@ -151,7 +151,7 @@ export default function Portfolio() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-[clamp(36px,6vw,120px)] font-extrabold text-[#EDE4D3] leading-none"
+            className="text-[clamp(36px,6vw,120px)] font-extrabold text-[#F0F5FA] leading-none"
           >
             Ngô Xuân Sơn
           </motion.p>
@@ -206,7 +206,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#EDE4D3] flex flex-col gap-4"
+              className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#F0F5FA] flex flex-col gap-4"
             >
               <p className="text-[clamp(20px,2vw,36px)] font-extrabold text-secondary">
                 🎯 Mục tiêu học tập
@@ -250,7 +250,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 }}
-              className="rounded-[20px] p-8 bg-[#EDE4D3]/10 shadow-[inset_0_0_0_1px_#EDE4D3] flex flex-col gap-4"
+              className="rounded-[20px] p-8 bg-[#F0F5FA]/10 shadow-[inset_0_0_0_1px_#F0F5FA] flex flex-col gap-4"
             >
               <p className="text-[clamp(20px,2vw,36px)] font-extrabold text-secondary">
                 📌 Mục đích Portfolio
@@ -327,7 +327,7 @@ export default function Portfolio() {
           viewport={{ once: true }}
           className="text-[clamp(60px,11.77vw,226px)] font-extrabold leading-[1.1] md:leading-[1.3] max-w-[1819px]"
         >
-          Các <span className="text-secondary">kỹ năng</span> mình đã phát triển
+          Các <span className="text-[#4DD0E1]">kỹ năng</span> mình đã phát triển
         </motion.p>
 
         <div className="mt-[clamp(25px,5.2vw,100px)] relative flex flex-col xl:flex-row items-start justify-between">
@@ -394,7 +394,7 @@ export default function Portfolio() {
           <div className="bg-secondary w-[20px] md:w-[33px] min-h-[20px] md:h-[33px] rounded-full" />
         </div>
 
-        <p className="text-center text-[clamp(16px,1.5vw,26px)] font-light text-[#EDE4D3]/70 -mt-4">
+        <p className="text-center text-[clamp(16px,1.5vw,26px)] font-light text-[#F0F5FA]/70 -mt-4">
           6 bài tập thuộc môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo
         </p>
 
@@ -406,7 +406,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.08 }}
               viewport={{ once: true }}
-              className="flex flex-col rounded-[20px] overflow-hidden shadow-[inset_0_0_0_1px_#EDE4D3] bg-[#EDE4D3]/5 hover:bg-[#EDE4D3]/10 transition-all duration-300 group"
+              className="flex flex-col rounded-[20px] overflow-hidden shadow-[inset_0_0_0_1px_#F0F5FA] bg-[#F0F5FA]/5 hover:bg-[#F0F5FA]/10 transition-all duration-300 group"
             >
               {/* Card Header */}
               <div className="bg-secondary p-6 flex flex-col gap-2">
@@ -427,7 +427,7 @@ export default function Portfolio() {
                   <p className="text-[13px] font-bold text-secondary uppercase tracking-widest mb-2">
                     🎯 Mục tiêu
                   </p>
-                  <p className="text-[clamp(14px,1.1vw,18px)] font-light leading-[1.6] text-[#EDE4D3]/80">
+                  <p className="text-[clamp(14px,1.1vw,18px)] font-light leading-[1.6] text-[#F0F5FA]/80">
                     {assignment.goal}
                   </p>
                 </div>
@@ -436,7 +436,7 @@ export default function Portfolio() {
                   <p className="text-[13px] font-bold text-secondary uppercase tracking-widest mb-2">
                     📋 Tóm tắt
                   </p>
-                  <p className="text-[clamp(14px,1.1vw,18px)] font-light leading-[1.6] text-[#EDE4D3]/80">
+                  <p className="text-[clamp(14px,1.1vw,18px)] font-light leading-[1.6] text-[#F0F5FA]/80">
                     {assignment.summary}
                   </p>
                 </div>
@@ -484,11 +484,11 @@ export default function Portfolio() {
               </h2>
               <div className="bg-secondary w-[20px] md:w-[33px] min-h-[20px] md:h-[33px] rounded-full" />
             </div>
-            <p className="text-[clamp(25px,2.34vw,45px)] font-extrabold leading-[1.26]">
-              CÔNG CỤ VÀ THIẾT BỊ CỦA Mình
+            <p className="text-[clamp(25px,2.34vw,45px)] font-extrabold leading-[1.26] text-foreground">
+              CÔNG CỤ VÀ THIẾT BỊ CỦA TÔI
             </p>
-            <p className="text-[clamp(16px,1.5vw,24px)] font-normal leading-[1.6] text-[#EDE4D3]/70">
-              Những công cụ mình sử dụng hàng ngày trong học tập và làm việc
+            <p className="text-[clamp(16px,1.5vw,24px)] font-normal leading-[1.6] text-foreground/70">
+              Những công cụ tôi sử dụng hàng ngày trong học tập và làm việc
             </p>
           </div>
 
@@ -496,21 +496,21 @@ export default function Portfolio() {
             {[
               {
                 i1: images.setupLaptop,
-                i2: images.setupCreative,
                 title: "Máy tính / Laptop",
                 sub: "Thiết bị học tập chính",
+                inset: true,
               },
               {
                 i1: images.setupCreative,
-                i2: images.setupWorkspace,
                 title: "Google Scholar",
-                sub: "Công cụ tìm kiếm & nghiên cứu",
+                sub: "Công cụ nghiên cứu & học thuật",
+                inset: false,
               },
               {
                 i1: images.setupWorkspace,
-                i2: images.setupLaptop,
                 title: "Google Workspace",
                 sub: "Làm việc và cộng tác nhóm",
+                inset: true,
               },
             ].map((item, i) => (
               <motion.div
@@ -519,13 +519,15 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col sm:flex-row items-start sm:items-center gap-5 p-5 bg-accent rounded-[20px] w-full"
+                className="flex flex-col sm:flex-row items-start sm:items-center gap-5 p-5 bg-accent rounded-[20px] w-full shadow-[inset_0_0_0_1px_hsl(var(--border))]"
               >
-                <img
-                  src={item.i1}
-                  className="w-full sm:w-[226px] h-[150px] sm:h-full object-cover rounded-[20px]"
-                  alt="Setup Item"
-                />
+                <div className="w-full sm:w-[226px] h-[150px] shrink-0 rounded-[20px] bg-accent flex items-center justify-center overflow-hidden">
+                  <img
+                    src={item.i1}
+                    className={`object-cover rounded-[14px] ${item.inset ? "w-[88%] h-[88%]" : "w-full h-full"}`}
+                    alt="Setup Item"
+                  />
+                </div>
                 <div className="flex flex-col gap-3 items-start w-full">
                   <p className="text-[clamp(19px,1.82vw,30px)] font-extrabold text-primary">
                     {item.title}
@@ -549,7 +551,7 @@ export default function Portfolio() {
           >
             <img
               src={images.setupMain}
-              className="w-full h-full object-cover rounded-[20px] shadow-[inset_0_0_0_8px_#EDE4D3] md:shadow-[inset_0_0_0_18px_#EDE4D3]"
+              className="w-full h-full object-cover rounded-[20px] shadow-[inset_0_0_0_8px_hsl(var(--border))] md:shadow-[inset_0_0_0_18px_hsl(var(--border))]"
               alt="Không gian làm việc"
             />
           </motion.div>
@@ -570,7 +572,7 @@ export default function Portfolio() {
               >
                 <img
                   src={src}
-                  className="w-full aspect-[270/164] object-cover rounded-[20px] shadow-[inset_0_0_0_4px_#EDE4D3]"
+                  className="w-full aspect-[270/164] object-cover rounded-[20px] shadow-[inset_0_0_0_4px_hsl(var(--border))]"
                   alt="Chi tiết thiết lập"
                 />
               </motion.div>
@@ -599,7 +601,7 @@ export default function Portfolio() {
               Hành trình <span className="text-secondary">học hỏi</span> từng
               ngày
             </p>
-            <p className="text-[clamp(16px,1.5vw,24px)] font-light leading-[1.7] text-[#EDE4D3]/70">
+            <p className="text-[clamp(16px,1.5vw,24px)] font-light leading-[1.7] text-[#F0F5FA]/70">
               Đây là nơi mình ghi lại những suy nghĩ, khám phá và bài học từ mỗi
               tuần học. Nhật ký giúp mình nhìn lại hành trình và tiếp tục tiến
               bộ.
@@ -615,7 +617,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-4 pt-6 border-t-[2px] border-[#EDE4D3]/20 group cursor-pointer"
+                className="flex flex-col gap-4 pt-6 border-t-[2px] border-[#F0F5FA]/20 group cursor-pointer"
               >
                 <div className="flex flex-row flex-wrap gap-2">
                   {post.tags.map((tag, j) => (
@@ -626,14 +628,14 @@ export default function Portfolio() {
                       {tag}
                     </span>
                   ))}
-                  <span className="text-[13px] text-[#EDE4D3]/50 font-light self-center ml-2">
+                  <span className="text-[13px] text-[#F0F5FA]/50 font-light self-center ml-2">
                     {post.date}
                   </span>
                 </div>
                 <p className="text-[clamp(18px,1.5vw,26px)] font-extrabold group-hover:text-secondary transition-colors">
                   {post.title}
                 </p>
-                <p className="text-[clamp(14px,1.2vw,20px)] font-light leading-[1.7] text-[#EDE4D3]/70">
+                <p className="text-[clamp(14px,1.2vw,20px)] font-light leading-[1.7] text-[#F0F5FA]/70">
                   {post.excerpt}
                 </p>
                 <p className="text-secondary font-bold text-[14px] group-hover:underline">
@@ -685,7 +687,7 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#EDE4D3] flex flex-col gap-4"
+            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#F0F5FA] flex flex-col gap-4"
           >
             <p className="text-[clamp(20px,1.8vw,32px)] font-extrabold text-secondary">
               📚 Kiến thức đã học
@@ -715,7 +717,7 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#EDE4D3] flex flex-col gap-4"
+            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#F0F5FA] flex flex-col gap-4"
           >
             <p className="text-[clamp(20px,1.8vw,32px)] font-extrabold text-secondary">
               ⭐ Điểm tâm đắc nhất
@@ -737,7 +739,7 @@ export default function Portfolio() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-row items-start gap-3 p-4 bg-[#EDE4D3]/10 rounded-[12px]"
+                  className="flex flex-row items-start gap-3 p-4 bg-[#F0F5FA]/10 rounded-[12px]"
                 >
                   <span className="text-2xl shrink-0">{item.emoji}</span>
                   <p className="text-[14px] md:text-[16px] font-light leading-[1.6]">
@@ -754,7 +756,7 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             viewport={{ once: true }}
-            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#EDE4D3] flex flex-col gap-4"
+            className="rounded-[20px] p-8 shadow-[inset_0_0_0_1px_#F0F5FA] flex flex-col gap-4"
           >
             <p className="text-[clamp(20px,1.8vw,32px)] font-extrabold text-secondary">
               💪 Thách thức đã vượt qua
@@ -776,7 +778,7 @@ export default function Portfolio() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-row items-start gap-3 p-4 bg-[#EDE4D3]/10 rounded-[12px]"
+                  className="flex flex-row items-start gap-3 p-4 bg-[#F0F5FA]/10 rounded-[12px]"
                 >
                   <span className="text-2xl shrink-0">{item.emoji}</span>
                   <p className="text-[14px] md:text-[16px] font-light leading-[1.6]">
@@ -826,18 +828,18 @@ export default function Portfolio() {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="flex-1 p-2.5 border-b-[2px] border-secondary bg-transparent text-[#EDE4D3] text-[clamp(16px,1.56vw,30px)] font-light outline-none placeholder:text-[#EDE4D3]/50 focus:border-[#EDE4D3] transition-colors"
+                  className="flex-1 p-2.5 border-b-[2px] border-secondary bg-transparent text-[#F0F5FA] text-[clamp(16px,1.56vw,30px)] font-light outline-none placeholder:text-[#F0F5FA]/50 focus:border-[#F0F5FA] transition-colors"
                 />
 
                 <input
                   type="text"
                   placeholder="Tên của bạn"
-                  className="flex-1 p-2.5 border-b-[2px] border-secondary bg-transparent text-[#EDE4D3] text-[clamp(16px,1.56vw,30px)] font-light outline-none placeholder:text-[#EDE4D3]/50 focus:border-[#EDE4D3] transition-colors"
+                  className="flex-1 p-2.5 border-b-[2px] border-secondary bg-transparent text-[#F0F5FA] text-[clamp(16px,1.56vw,30px)] font-light outline-none placeholder:text-[#F0F5FA]/50 focus:border-[#F0F5FA] transition-colors"
                 />
               </div>
               <textarea
                 placeholder="Lời nhắn"
-                className="w-full h-[150px] md:h-[263px] p-2.5 border-b-[2px] border-secondary bg-transparent text-[#EDE4D3] text-[clamp(16px,1.56vw,30px)] font-light outline-none resize-none placeholder:text-[#EDE4D3]/50 focus:border-[#EDE4D3] transition-colors"
+                className="w-full h-[150px] md:h-[263px] p-2.5 border-b-[2px] border-secondary bg-transparent text-[#F0F5FA] text-[clamp(16px,1.56vw,30px)] font-light outline-none resize-none placeholder:text-[#F0F5FA]/50 focus:border-[#F0F5FA] transition-colors"
               />
 
               <button
@@ -868,13 +870,13 @@ export default function Portfolio() {
                 Thông tin liên hệ
               </p>
               <a
-                href="mailto:pn0667300@gmail.com"
+                href="mailto:xuanson2582007@gmail.com"
                 className="text-[clamp(16px,1.8vw,32px)] font-normal hover:text-secondary transition-colors break-all"
               >
-                pn0667300@gmail.com
+                xuanson2582007@gmail.com
               </a>
-              <p className="text-[clamp(14px,1.5vw,24px)] font-normal text-[#EDE4D3]/80">
-                0337112455
+              <p className="text-[clamp(14px,1.5vw,24px)] font-normal text-[#F0F5FA]/80">
+                0352980975
               </p>
             </div>
 
@@ -931,7 +933,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="mt-[clamp(38px,7.8vw,150px)] mx-4 md:mx-12 mb-12 flex flex-col lg:flex-row justify-between items-center gap-10 z-10 relative border-t border-[#EDE4D3]/20 pt-10">
+      <footer className="mt-[clamp(38px,7.8vw,150px)] mx-4 md:mx-12 mb-12 flex flex-col lg:flex-row justify-between items-center gap-10 z-10 relative border-t border-[#F0F5FA]/20 pt-10">
         <div className="flex flex-row items-center gap-[clamp(16px,2.1vw,40px)] md:gap-[clamp(19px,4.9vw,95px)]">
           <p className="text-[clamp(20px,2.34vw,45px)] font-extralight">©</p>
           <p className="text-[clamp(20px,2.34vw,45px)] font-light">2026</p>

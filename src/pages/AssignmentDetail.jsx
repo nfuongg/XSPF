@@ -13,7 +13,7 @@ export default function AssignmentDetail() {
 
   if (!assignment) {
     return (
-      <main className="min-h-screen bg-background flex items-center justify-center font-heading text-[#EDE4D3]">
+      <main className="min-h-screen bg-background flex items-center justify-center font-heading text-[#F0F5FA]">
         <div className="text-center">
           <p className="text-6xl mb-4">🔍</p>
           <p className="text-2xl font-bold mb-4">Không tìm thấy bài học</p>
@@ -24,16 +24,16 @@ export default function AssignmentDetail() {
   }
 
   return (
-    <main className="max-w-[1920px] w-full mx-auto relative bg-background overflow-clip font-heading text-[#EDE4D3]">
+    <main className="max-w-[1920px] w-full mx-auto relative bg-background overflow-clip font-heading text-[#F0F5FA]">
       {/* Background Grid Lines */}
       <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.03] flex justify-between w-full h-full">
         {[...Array(10)].map((_, i) => (
-          <div key={i} className="w-1 h-full bg-[#EDE4D3]" />
+          <div key={i} className="w-1 h-full bg-[#F0F5FA]" />
         ))}
       </div>
 
       {/* Navigation */}
-      <nav className="sticky top-6 z-50 mx-4 md:mx-[clamp(16px,2vw,38px)] flex flex-row justify-between items-center p-[15px] rounded-[16px] shadow-[inset_0_0_0_1px_#EDE4D3] bg-background/80 backdrop-blur-md">
+      <nav className="sticky top-6 z-50 mx-4 md:mx-[clamp(16px,2vw,38px)] flex flex-row justify-between items-center p-[15px] rounded-[16px] shadow-[inset_0_0_0_1px_#F0F5FA] bg-background/80 backdrop-blur-md">
         <div className="flex flex-row items-center gap-[18px]">
           <p className="text-[clamp(20px,2.4vw,46px)] font-extrabold leading-none">PORTFOLIO</p>
           <div className="bg-secondary w-5 h-5 rounded-full" />
@@ -89,7 +89,7 @@ export default function AssignmentDetail() {
         viewport={{ once: true }}
         className="mt-[clamp(30px,5vw,80px)] mx-4 md:mx-10 relative z-10"
       >
-        <div className="rounded-[20px] shadow-[inset_0_0_0_1px_#EDE4D3] p-8 md:p-12 bg-[#EDE4D3]/5">
+        <div className="rounded-[20px] shadow-[inset_0_0_0_1px_#F0F5FA] p-8 md:p-12 bg-[#F0F5FA]/5">
           <p className="text-secondary font-bold text-[13px] uppercase tracking-widest mb-3">🎯 Mục tiêu bài học</p>
           <p className="text-[clamp(18px,2vw,32px)] font-light leading-[1.7]">{assignment.goal}</p>
         </div>
@@ -114,7 +114,7 @@ export default function AssignmentDetail() {
 
             {/* Content */}
             {section.content && (
-              <div className="rounded-[20px] shadow-[inset_0_0_0_1px_#EDE4D3] p-8 bg-[#EDE4D3]/5">
+              <div className="rounded-[20px] shadow-[inset_0_0_0_1px_#F0F5FA] p-8 bg-[#F0F5FA]/5">
                 <p className="text-[clamp(15px,1.3vw,22px)] font-light leading-[1.8]">{section.content}</p>
               </div>
             )}
@@ -125,14 +125,14 @@ export default function AssignmentDetail() {
                 {section.steps.map((s, i) => (
                   <div
                     key={i}
-                    className="flex flex-row items-start gap-4 p-6 rounded-[16px] shadow-[inset_0_0_0_1px_#EDE4D3] bg-[#EDE4D3]/5 hover:bg-[#EDE4D3]/10 transition-all"
+                    className="flex flex-row items-start gap-4 p-6 rounded-[16px] shadow-[inset_0_0_0_1px_#F0F5FA] bg-[#F0F5FA]/5 hover:bg-[#F0F5FA]/10 transition-all"
                   >
                     <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-primary font-extrabold text-[13px] shrink-0">
                       {s.step}
                     </div>
                     <div className="flex flex-col gap-1">
                       <p className="font-bold text-[clamp(15px,1.2vw,20px)]">{s.title}</p>
-                      <p className="text-[clamp(13px,1vw,16px)] font-light leading-[1.6] text-[#EDE4D3]/70">{s.desc}</p>
+                      <p className="text-[clamp(13px,1vw,16px)] font-light leading-[1.6] text-[#F0F5FA]/70">{s.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -145,7 +145,7 @@ export default function AssignmentDetail() {
                 {section.highlights.map((h, i) => (
                   <div
                     key={i}
-                    className="flex flex-row items-start gap-4 p-5 rounded-[14px] bg-[#EDE4D3]/5 shadow-[inset_0_0_0_1px_#EDE4D3]"
+                    className="flex flex-row items-start gap-4 p-5 rounded-[14px] bg-[#F0F5FA]/5 shadow-[inset_0_0_0_1px_#F0F5FA]"
                   >
                     <span className="text-2xl shrink-0">{h.emoji}</span>
                     <p className="text-[clamp(14px,1.1vw,18px)] font-light leading-[1.6]">{h.text}</p>
@@ -161,11 +161,11 @@ export default function AssignmentDetail() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-[#EDE4D3]/20"
+          className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-[#F0F5FA]/20"
         >
           <Link
             to="/#project"
-            className="flex flex-row items-center gap-2 py-3 px-6 rounded-[57px] shadow-[inset_0_0_0_1px_#EDE4D3] hover:bg-[#EDE4D3]/10 transition-all font-bold text-[clamp(14px,1.2vw,18px)]"
+            className="flex flex-row items-center gap-2 py-3 px-6 rounded-[57px] shadow-[inset_0_0_0_1px_#F0F5FA] hover:bg-[#F0F5FA]/10 transition-all font-bold text-[clamp(14px,1.2vw,18px)]"
           >
             <ArrowLeft className="w-4 h-4" />
             Xem các bài khác
