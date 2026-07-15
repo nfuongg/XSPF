@@ -80,7 +80,7 @@ export const assignments = [
     title: "Ứng dụng Prompt Engineering trong học tập",
     icon: "🤖",
     tags: ["Prompt Engineering", "AI", "Ngôn ngữ Anh", "Kỹ năng số"],
-    pdfLink: "https://drive.google.com/file/d/1Rnz6nXjlS-j_QOIUjBeVa6kYT7-Ba93n/view?usp=drive_link",
+    pdfLink: "https://drive.google.com/file/d/1fzyoJMa7glW0KEK8QGP2on0SlUM7x3ir/view?usp=drive_link",
     goal: "Nắm vững kỹ năng thiết kế câu lệnh (Prompt Engineering) từ cơ bản đến nâng cao để khai thác tối đa hiệu năng của các Mô hình Ngôn ngữ Lớn (LLMs) trong nghiên cứu chuyên ngành.",
     summary: "Phân tích 3 tác vụ học tập cốt lõi và thực hành xây dựng các phiên bản prompt. Ứng dụng các kỹ thuật chuyên sâu (Role-play, Chain-of-Thought, Few-shot) vào các môn học thuộc chuyên ngành Ngôn ngữ Anh.",
     sections: [
@@ -149,7 +149,7 @@ export const assignments = [
   title: "Sáng tạo nội dung số với hệ sinh thái AI",
   icon: "🏙️",
   tags: ["AI tạo sinh", "Infographic", "Thuyết trình"],
-  pdfLink: "https://drive.google.com/file/d/1vX9nFBH9kI4kH4q-yZjDHphuavDnSrP7/view?usp=drive_link",
+  pdfLink: "https://drive.google.com/file/d/1m247nksZH8PVW-GeuczcJ6vcY3CjdB-e/view?usp=drive_link",
   goal: "Minh chứng năng lực kết hợp các công cụ AI tạo sinh để sản xuất sản phẩm sáng tạo hoàn chỉnh (từ khâu lên ý tưởng đến thiết kế thị giác).",
   summary: "Thực hiện dự án 'Kỷ Nguyên Mới: Thành Phố Thông Minh 2030' (gồm Slide và Infographic) thông qua quy trình tương tác 50-50 giữa tư duy con người và hệ sinh thái AI (Google Gemini, Midjourney, Canva AI).",
   sections: [
@@ -181,7 +181,7 @@ export const assignments = [
   title: "Sử dụng AI có trách nhiệm và đạo đức trong học tập",
   icon: "⚖️",
   tags: ["Đạo đức AI", "Liêm chính học thuật", "Fact-check"],
-  pdfLink: "https://drive.google.com/file/d/1U_nAF7mXzgKO40_O0Qv4I2FrX7XTC6yn/view?usp=drive_link",
+  pdfLink: "https://drive.google.com/file/d/1faBOKpHujCy2WfOX4ODQrnqZSr30VYXC/view?usp=drive_link",
   goal: "Phát triển kỹ năng ứng dụng AI một cách minh bạch, có trách nhiệm, tuân thủ các chính sách học thuật và bảo vệ tư duy độc lập.",
   summary: "Thực hành dùng ChatGPT để lập dàn ý bài luận về tâm lý Gen Z. Phân tích ranh giới đạo đức, áp dụng quy trình 3 bước xử lý thông tin (Fact-check, Bản địa hóa, Cá nhân hóa) và thiết lập Bộ 6 nguyên tắc cá nhân khi dùng AI.",
   sections: [
